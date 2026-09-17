@@ -1,0 +1,61 @@
+---
+title: "Production, Quality, Maintenance & IE Management System"
+publishedAt: "2026-01-01"
+summary: "A shop-floor management suite for a garment factory: hourly production targets, quality reporting, machine inventory and status, and IE line-balancing — live in production at HKD Outdoor Innovations Ltd."
+images:
+  - "/images/projects/project-02/Screenshot_42.png"
+  - "/images/projects/project-02/Screenshot_43.png"
+  - "/images/projects/project-02/Screenshot_44.png"
+  - "/images/projects/project-02/Screenshot_45.png"
+  - "/images/projects/project-02/Screenshot_46.png"
+  - "/images/projects/project-02/Screenshot_47.png"
+  - "/images/projects/project-02/Screenshot_48.png"
+  - "/images/projects/project-02/Screenshot_49.png"
+  - "/images/projects/project-02/Screenshot_50.png"
+  - "/images/projects/project-02/Screenshot_51.png"
+team:
+  - name: "MD. Ratul"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/md-ratul-4a8394418/"
+link: "https://hkd-production-quality-erp.vercel.app/"
+---
+
+## Overview
+
+A multi-module ERP system that gives a garment factory's production, quality, maintenance, and industrial
+engineering teams a shared, real-time view of the shop floor. It is deployed and running in production at HKD
+Outdoor Innovations Ltd.
+
+- **GitHub**: [ratuldev47782/Production-Quality-ERP-V-2.0](https://github.com/ratuldev47782/Production-Quality-ERP-V-2.0)
+- **Live demo**: [hkd-production-quality-erp.vercel.app](https://hkd-production-quality-erp.vercel.app/)
+- **Demo login**: user `Ratul` / password `123456`
+
+## Modules
+
+- **Production** — line-wise hourly target vs. achievement tracking, automated efficiency percentage calculation,
+  and style-wise WIP visibility, surfaced through real-time shop-floor dashboards built for TV displays with
+  auto-refresh.
+- **Quality** — hourly defect logging, RFT% and DHU% reporting, and top-defect ranking by line and date, so quality
+  decisions are driven by the last hour of data instead of end-of-day summaries.
+- **Maintenance** — a complete machine inventory with serial-number tracking, floor-wise placement, and live status
+  management (Running / Idle / Repairable / Damage).
+- **Industrial Engineering (IE)** — process-wise machine line layout planning that calculates targets from SMV,
+  efficiency, and manpower inputs, synced live with machine status.
+
+## Access control
+
+Role-based access control spans the Production, Quality, Maintenance, IE, and Management teams, with building-level
+data isolation and kiosk-friendly persistent sessions for shop-floor devices.
+
+## Technologies used
+
+- **Next.js (App Router)** and **React** for the dashboards and operator screens.
+- **Express.js** for the API, with **MongoDB and Mongoose** for the operational data model.
+- **Recharts** for efficiency, defect, and target-vs-achievement charts.
+- **Tailwind CSS and DaisyUI**, **Framer Motion**, **Cloudinary**, and **JWT** for UI, assets, and authentication.
+
+## Outcome
+
+Production, quality, maintenance, and IE now work from the same live data. Hourly targets, defect rates, and machine
+status are visible on the floor as they happen rather than being reported after the fact.

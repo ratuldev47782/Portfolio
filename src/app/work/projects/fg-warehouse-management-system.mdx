@@ -1,0 +1,57 @@
+---
+title: "FG Warehouse MS – Allocation, Shipments & Barcode Printing"
+publishedAt: "2026-06-01"
+summary: "A finished-goods warehouse workflow covering carton allocation, a real-time placement engine, live CBM tracking, shipment scanning, and barcode label printing — live in production at HKD Outdoor Innovations Ltd."
+images:
+  - "/images/projects/project-01/Screenshot_31.png"
+  - "/images/projects/project-01/Screenshot_32.png"
+  - "/images/projects/project-01/Screenshot_33.png"
+  - "/images/projects/project-01/Screenshot_34.png"
+  - "/images/projects/project-01/Screenshot_35.png"
+  - "/images/projects/project-01/Screenshot_36.png"
+  - "/images/projects/project-01/Screenshot_37.png"
+  - "/images/projects/project-01/Screenshot_38.png"
+  - "/images/projects/project-01/Screenshot_39.png"
+  - "/images/projects/project-01/Screenshot_40.png"
+  - "/images/projects/project-01/Screenshot_41.png"
+
+team:
+  - name: "MD. Ratul"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/md-ratul-4a8394418/"
+link: "https://fg-warehouse-ms.vercel.app/"
+---
+
+## Overview
+
+A finished-goods (FG) warehouse management system built for HKD Outdoor Innovations Ltd. and currently running in
+production. It covers the full outbound journey of finished goods: allocating cartons into storage rows, tracking
+where every carton physically sits, scanning shipment cartons, and printing barcode labels at dispatch.
+
+- **GitHub**: [ratuldev47782/FG-Warehouse-MS-Project](https://github.com/ratuldev47782/FG-Warehouse-MS-Project)
+- **Live demo**: [fg-warehouse-ms.vercel.app](https://fg-warehouse-ms.vercel.app/)
+- **Demo login**: user `Ratul` / password `123456`
+
+## Key features
+
+- **Carton allocation into rows**: a visual allocation workflow for finished goods that supports both continuous and
+  segmented placement, backed by a real-time placement engine and live CBM metric tracking.
+- **Shipment scanning & barcode printing**: an end-to-end dispatch pipeline that scans codes, auto-generates carton
+  IDs, and prints labels with carton-range support to speed up shipment.
+- **Admin control panel**: configurable placement policies, row and warehouse switching, and a searchable inventory
+  view with size-wise PCS counts mapped to carton locations by row.
+
+## Technologies used
+
+- **Next.js (App Router)** for the application shell, routing, and server-rendered views.
+- **Express.js** for the REST API layer.
+- **MongoDB with Mongoose** for warehouse, carton, and shipment data models.
+- **Tailwind CSS and DaisyUI** for the operator interface.
+- **Cloudinary** for image and label asset storage, **Framer Motion** for transitions, and **JWT** for session
+  authentication and role-based access.
+
+## Outcome
+
+Warehouse staff now allocate, locate, and dispatch finished goods from a single system, replacing manual carton
+tracking with a live view of what is in each row and what has shipped.
